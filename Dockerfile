@@ -7,6 +7,7 @@ WORKDIR /var/www/html/src
 RUN docker-php-ext-install mysqli
 
 RUN echo $(openssl rand -hex 16) > /root/root.txt
+RUN echo $(openssl rand -hex 16) > /home/user/user.txt
 
 RUN useradd -m -s /bin/bash user && \
     chown -R user:user /var/www/html/src/uploads && \
