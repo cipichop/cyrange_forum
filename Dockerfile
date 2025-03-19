@@ -8,6 +8,12 @@ RUN docker-php-ext-install mysqli
 
 RUN echo $(openssl rand -hex 16) > /root/root.txt
 
+RUN useradd -m -s /bin/bash user && \
+    chown -R user:user /var/www/html/src/uploads && \
+    chmod -R 755 /var/www/html/src/uploads
+
+USER user
+
 EXPOSE 80
 
 CMD ["php", "-S", "0.0.0.0:80"]
