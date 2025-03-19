@@ -1,0 +1,183 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #53174b;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+.hfiller {
+    height: 140px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #784f75;
+    padding: 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    color: #fff;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #8c708c;
+}
+
+nav ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.navbar li {
+    margin: 0 10px;
+}
+
+nav ul.navbar li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Styles for discussions */
+ul.discussions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.discussions li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.discussions li:last-child {
+    border-bottom: none;
+}
+
+ul.discussions li a {
+    text-decoration: none;
+    color: #9e148e;
+    font-weight: bold;
+}
+
+ul.discussions li a:hover {
+    text-decoration: underline;
+}
+
+ul.discussions li span.date {
+    display: block;
+    color: #999;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+/* Styles for topic tags */
+.topic-tag {
+    display: inline-block;
+    background-color: #53174b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin: 10px 5px 5px 10px;
+}
+
+button {
+    background-color: #53174b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #53174b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #784f75;
+}
+
+.ffiller {
+    height: 70px;
+}
+
+footer {
+    background-color: #53174b;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
