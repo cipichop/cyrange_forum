@@ -31,6 +31,7 @@ INSERT INTO discussions (title, content, topic, user_id) VALUES
     ('Cheapest Food Nearby', 'I found a great place that sells delicious sandwiches for just $5!', 'Food', 2),
     ('New Job Opportunities', 'I recently heard about a new job opening in the tech industry. Does anyone have more information about this?', 'Jobs', 3),
     ('Am I Hacked??', 'I recently noticed some unusual activity on my account. Has anyone else experienced this?', 'Security', 4),
-    ('WHO IS SUCIPTO?', 'Have you ever seen that ugly shark called sucipto? And his friends like reza (shark), daniel (surfing cow), and many more..?', 'Random', 5),
     ('Mental Health Awareness', 'Mental health is just as important as physical health. What are some resources or practices that have helped you maintain your mental well-being?', 'Health', 4),
     ('Need Money', 'I have been freelancing for a while now and it has been a great way to earn extra income. Does anyone have tips on finding more freelance gigs?', 'Jobs', 3);
+INSERT INTO discussions (title, content, topic, user_id, file_path) VALUES
+    ('WHO IS SUCIPTO?', 'Have you ever seen that ugly shark called sucipto? And his friends like reza (shark), daniel (surfing cow), and many more..?', 'Random', 5, 'uploads/e9674e417a6ad8650fcd66b6b57d1776.jpg');
