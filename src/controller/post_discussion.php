@@ -42,7 +42,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             exit();
         }
         
-        $fileName = basename($file['name']);
+        $timestamp = time();
+        $fileName = pathinfo($file['name'], PATHINFO_FILENAME);
+        $extension = pathinfo($file['name'], PATHINFO_EXTENSION);
+        $hashedName = md5($fileName . $timestamp);
+        $fileName = $hashedName . '.' . $extension;
+        $filePath = '../uploads/' . $fileName;
+
+        $counter = 1;
+        while (file_exists($filePath)) {
+            $fileName = $hashedName . '_' . $counter . '.' . $extension;
+            $filePath = '../uploads/' . $fileName;
+            $counter++;
+        }
         $filePath = '../uploads/' . $fileName;
         move_uploaded_file($file['tmp_name'], $filePath);
     }

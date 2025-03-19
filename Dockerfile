@@ -8,6 +8,6 @@ RUN docker-php-ext-install mysqli
 
 RUN echo $(openssl rand -hex 16) > /root/root.txt
 
-EXPOSE 8080
+EXPOSE 80
 
-CMD ["php", "-S", "0.0.0.0:8080"]
+CMD ["php", "-S", "0.0.0.0:80"]
